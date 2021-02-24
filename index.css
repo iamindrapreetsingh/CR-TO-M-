@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #ffe8d6;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  padding: 20px;
+  border-color: black;
+  border-style: solid;
+  width: fit-content;
+}
+
+.label {
+  font-size: 15px;
+}
