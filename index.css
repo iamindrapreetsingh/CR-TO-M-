@@ -24,3 +24,11 @@ body {
   padding: 2px;
   font-weight: bolder;
 }
+
+.mn-input {
+  height: 30px;
+}
+
+.cr-input {
+  height: 30px;
+}

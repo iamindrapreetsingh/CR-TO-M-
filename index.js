@@ -1,24 +1,24 @@
-const crTextArea = document.querySelector(".cr-textarea");
-const mnTextArea = document.querySelector(".mn-textarea");
+const crInput = document.querySelector(".cr-input");
+const mnInput = document.querySelector(".mn-input");
 
-crTextArea.addEventListener("input", () => operation(crTextArea));
-mnTextArea.addEventListener("input", () => operation(mnTextArea));
+crInput.addEventListener("input", () => operation(crInput));
+mnInput.addEventListener("input", () => operation(mnInput));
 
 operation = (input) => {
   switch (input) {
-    case crTextArea:
+    case crInput:
       if (input.value.length == 0) {
-        mnTextArea.value = "0.00";
+        mnInput.value = "0.00";
       } else {
-        mnTextArea.value = parseInt(crTextArea.value) / 7.25;
+        mnInput.value = crInput.value / 7.25;
       }
       break;
 
-    case mnTextArea:
+    case mnInput:
       if (input.value.length == 0) {
-        crTextArea.value = "0.00";
+        crInput.value = "0.00";
       } else {
-        crTextArea.value = parseInt(mnTextArea.value) * 7.25;
+        crInput.value = mnInput.value * 7.25;
       }
       break;
   }
